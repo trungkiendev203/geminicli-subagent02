@@ -1,38 +1,49 @@
-# Geminicli-subagent02
+# 🤖 Geminicli-subagent02
 
-Ví dụ về cách tạo một GeminiCLI subagent dành cho AI Agents, sẵn sàng cho giai đoạn tiếp theo là **AgentsicSE**.
+> **Ví dụ về cách tạo một GeminiCLI subagent dành cho AI Agents, sẵn sàng cho giai đoạn tiếp theo là AgentsicSE.**
 
-## Giới thiệu
+## 🌟 Giới thiệu
 
-Repository này chứa một ví dụ mẫu (template) về việc xây dựng một subagent sử dụng GeminiCLI. Đây là bước đệm quan trọng để tiến tới hệ thống AI Agents phức tạp hơn, cụ thể là hướng tới kỷ nguyên **AgentsicSE** (Agentic Software Engineering).
+`geminicli-subagent02` là một repository mẫu (blueprint) được thiết kế để trình diễn sức mạnh của việc module hóa AI Agents thông qua **GeminiCLI Subagents**. Trong kỷ nguyên **AgentsicSE** (Agentic Software Engineering), việc chia nhỏ các tác vụ thông minh thành các subagent chuyên biệt là chìa khóa để xây dựng các hệ thống tự động hóa phần mềm quy mô lớn.
 
-## Tính năng
+Dự án này tập trung vào vai trò **Code Architect** - một subagent có khả năng hiểu, phân tích và đề xuất cấu trúc cho các dự án phần mềm.
 
-- Cấu trúc thư mục chuẩn cho một subagent (.agent config).
-- Các ví dụ về workflows cho quá trình phát triển phần mềm tự động.
-- Script bổ trợ giúp Agent tự phân tích dự án.
+## 🚀 Tính năng nổi bật
 
-## Cấu trúc Repository
+- **Cấu hình Agent-Native**: Sử dụng thư mục `.agent` chuẩn để định nghĩa Persona và Brain của subagent.
+- **Smart Workflows**: Hệ thống quy trình tự động hóa (Workflows) thực thi bằng ngôn ngữ tự nhiên.
+- **Project Analysis Tools**: Tích hợp các script Python mạnh mẽ để quét và phân tích codebase.
+- **Tính sẵn sàng cao**: Dễ dàng tích hợp vào bất kỳ dự án nào sử dụng GeminiCLI.
+
+## 📂 Cấu trúc Repository
 
 ```text
 geminicli-subagent02/
-├── .agent/                 # Cấu hình dành riêng cho Agent
-│   ├── instructions.md     # Persona và quy tắc của subagent
-│   └── workflows/          # Các quy trình tự động hóa (Workflows)
-│       └── refactor.md     # Ví dụ workflow về refactor code
-├── scripts/                # Các công cụ/scripts mà Agent có thể gọi
-│   └── analyze.py          # Script phân tích cấu trúc dự án mẫu
-└── README.md
+├── .agent/                 # 🧠 "Bộ não" của Subagent
+│   ├── instructions.md     # Persona, quy tắc và chỉ dẫn hoạt động
+│   └── workflows/          # ⚙️ Các quy trình tự động hóa
+│       └── refactor.md     # Workflow mẫu về việc cấu trúc lại mã nguồn
+├── scripts/                # 🛠️ Công cụ hỗ trợ Agent
+│   └── analyze.py          # Script phân tích cấu trúc dự án
+└── README.md               # Tài liệu hướng dẫn
 ```
 
-## Cách sử dụng mẫu
+## 🛠️ Cách sử dụng
 
-Mỗi subagent được thiết kế để "hiểu" thư mục `.agent`. Khi bạn nạp subagent này vào GeminiCLI:
+Để sử dụng subagent này trong môi trường GeminiCLI của bạn:
 
-1. Nó sẽ đọc `instructions.md` để biết vai trò của mình.
-2. Nó có thể thực thi các quy trình trong `workflows/` bằng cách làm theo từng bước được định nghĩa.
-3. Nó có thể chạy các script trong `scripts/` để thu thập dữ liệu về codebase.
+1. **Clone repository này** vào thư mục dự án của bạn (hoặc sử dụng như một thư mục tham chiếu).
+2. **Kích hoạt Subagent**: GeminiCLI sẽ tự động nhận diện các cấu hình trong `.agent`.
+3. **Chạy Workflow**:
+   ```bash
+   /run refactor.md
+   ```
+4. **Sử dụng Script**: Agent có thể tự động gọi `python scripts/analyze.py` để lấy dữ liệu đầu vào cho quá trình suy luận.
 
-## Mục tiêu
+## 🎯 Mục tiêu dự án
 
-Phát triển các công cụ hỗ trợ lập trình viên (AI-assisted coding) thông qua việc module hóa các tác vụ thành các subagents chuyên biệt.
+Dự án này phục vụ cho việc học tập và phát triển cộng đồng AI Agents tại Việt Nam, hướng tới việc xây dựng các công cụ AI không chỉ "biết code" mà còn "hiểu cách xây dựng phần mềm" một cách bài bản.
+
+---
+
+_Built with ❤️ for the AgentsicSE community._
