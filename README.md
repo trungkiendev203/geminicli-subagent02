@@ -8,9 +8,30 @@ Repository này chứa một ví dụ mẫu (template) về việc xây dựng m
 
 ## Tính năng
 
-- Cấu trúc thư mục chuẩn cho một subagent.
-- Hướng dẫn tích hợp với GeminiCLI.
+- Cấu trúc thư mục chuẩn cho một subagent (.agent config).
 - Các ví dụ về workflows cho quá trình phát triển phần mềm tự động.
+- Script bổ trợ giúp Agent tự phân tích dự án.
+
+## Cấu trúc Repository
+
+```text
+geminicli-subagent02/
+├── .agent/                 # Cấu hình dành riêng cho Agent
+│   ├── instructions.md     # Persona và quy tắc của subagent
+│   └── workflows/          # Các quy trình tự động hóa (Workflows)
+│       └── refactor.md     # Ví dụ workflow về refactor code
+├── scripts/                # Các công cụ/scripts mà Agent có thể gọi
+│   └── analyze.py          # Script phân tích cấu trúc dự án mẫu
+└── README.md
+```
+
+## Cách sử dụng mẫu
+
+Mỗi subagent được thiết kế để "hiểu" thư mục `.agent`. Khi bạn nạp subagent này vào GeminiCLI:
+
+1. Nó sẽ đọc `instructions.md` để biết vai trò của mình.
+2. Nó có thể thực thi các quy trình trong `workflows/` bằng cách làm theo từng bước được định nghĩa.
+3. Nó có thể chạy các script trong `scripts/` để thu thập dữ liệu về codebase.
 
 ## Mục tiêu
 
